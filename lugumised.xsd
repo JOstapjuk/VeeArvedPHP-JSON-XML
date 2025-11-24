@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="veearvesti">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="building">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="period">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="lugumised">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="kuld_m3" type="xs:decimal" />
+													<xs:element name="soe_m3" type="xs:decimal" />
+												</xs:sequence>
+												<xs:attribute name="korter" type="xs:string" use="required" />
+												<xs:attribute name="nimi" type="xs:string" use="required" />
+												<xs:attribute name="kuupaev" type="xs:date" use="required" />
+												<xs:attribute name="makstud" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="year" type="xs:unsignedShort" use="required" />
+									<xs:attribute name="month" type="xs:unsignedByte" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" use="required" />
+						<xs:attribute name="address" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

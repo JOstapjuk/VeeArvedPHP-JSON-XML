@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<veearvesti xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="../data/lugumised.xsd">
+	<building id="T1" address="Tallinna 10">
+		<period year="2025" month="10">
+			<lugumised korter="1A" nimi="Jaan Tamm" kuupaev="2025-10-15" makstud="ei">
+				<kuld_m3>2.34</kuld_m3>
+				<soe_m3>1.12</soe_m3>
+			</lugumised>
+			<lugumised korter="2B" nimi="Mari Maasikas" kuupaev="2025-10-16" makstud="jah">
+				<kuld_m3>3.00</kuld_m3>
+				<soe_m3>2.50</soe_m3>
+			</lugumised>
+		</period>
+
+		<period year="2025" month="11">
+			<lugumised korter="1A" nimi="Jaan Tamm" kuupaev="2025-11-15" makstud="jah">
+				<kuld_m3>2.50</kuld_m3>
+				<soe_m3>1.20</soe_m3>
+			</lugumised>
+		</period>
+	</building>
+
+	<building id="P2" address="Pargi 5">
+		<period year="2025" month="11">
+			<lugumised korter="10" nimi="Kati Kask" kuupaev="2025-11-10" makstud="ei">
+				<kuld_m3>1.00</kuld_m3>
+				<soe_m3>0.80</soe_m3>
+			</lugumised>
+		</period>
+	</building>
+</veearvesti>
