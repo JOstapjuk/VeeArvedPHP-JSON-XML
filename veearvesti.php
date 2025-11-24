@@ -61,21 +61,6 @@ sort($dates); sort($apartments); sort($paidStatus);
 </head>
 <body>
 
-<h2>Lisa uus veearvesti näit</h2>
-<form method="post">
-    <label>Hoone ID: <input type="text" name="building_id"></label><br>
-    <label>Hoone aadress: <input type="text" name="building_address"></label><br>
-    <label>Aasta: <input type="text" name="year"></label><br>
-    <label>Kuu: <input type="text" name="month"></label><br>
-    <label>Korter: <input type="text" name="korter"></label><br>
-    <label>Nimi: <input type="text" name="nimi"></label><br>
-    <label>Kuupäev: <input type="date" name="kuupaev"></label><br>
-    <label>Makstud (jah/ei): <input type="text" name="makstud"></label><br>
-    <label>Külm (m³): <input type="text" name="kuld_m3"></label><br>
-    <label>Soe (m³): <input type="text" name="soe_m3"></label><br>
-    <input type="submit" name="submit" value="Lisa">
-</form>
-
 <h2>Veearvesti näidud</h2>
 
 <form method="GET">
@@ -129,6 +114,21 @@ sort($dates); sort($apartments); sort($paidStatus);
         <?php endforeach; ?>
     </tbody>
 </table>
+
+<h2>Lisa uus veearvesti näit</h2>
+<form method="post">
+    <label>Hoone ID: <input type="text" name="building_id"></label><br>
+    <label>Hoone aadress: <input type="text" name="building_address"></label><br>
+    <label>Aasta: <input type="text" name="year"></label><br>
+    <label>Kuu: <input type="text" name="month"></label><br>
+    <label>Korter: <input type="text" name="korter"></label><br>
+    <label>Nimi: <input type="text" name="nimi"></label><br>
+    <label>Kuupäev: <input type="date" name="kuupaev"></label><br>
+    <label>Makstud (jah/ei): <input type="text" name="makstud"></label><br>
+    <label>Külm (m³): <input type="text" name="kuld_m3"></label><br>
+    <label>Soe (m³): <input type="text" name="soe_m3"></label><br>
+    <input type="submit" name="submit" value="Lisa">
+</form>
 
 </body>
 </html>
